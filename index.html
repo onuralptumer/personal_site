@@ -74,6 +74,7 @@
   .lightbox .next { right: 20px; top: 50%; transform: translateY(-50%); }
   .lightbox .count { position: absolute; bottom: 24px; left: 0; right: 0; text-align: center; font-family: var(--mono); font-size: 13px; color: var(--muted); }
   .lightbox [hidden] { display: none; }
+  @media (min-width: 700px) { .lightbox img { max-width: calc(100vw - 176px); } }
 
   .notes { border-top: 1px solid var(--line); padding: 40px 0 96px; display: flex; flex-wrap: wrap; gap: 32px; }
   .notes .label { flex: 1 1 200px; font-family: var(--mono); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
@@ -104,11 +105,11 @@
 
   <nav class="filters" data-i18n-aria="filter" aria-label="İşleri süz">
     <button data-filter="all" aria-pressed="true" data-i18n="all">Tümü</button>
-    <button data-filter="isik" aria-pressed="false" data-i18n="isik">Işık</button>
-    <button data-filter="ses" aria-pressed="false" data-i18n="ses">Ses</button>
-    <button data-filter="kod" aria-pressed="false" data-i18n="kod">Kod</button>
-    <button data-filter="sistem" aria-pressed="false" data-i18n="sistem">Sistem</button>
-    <button data-filter="yol" aria-pressed="false" data-i18n="yol">Yol</button>
+    <button data-filter="isik" aria-pressed="false" data-i18n="isik">Fotoğraf</button>
+    <button data-filter="ses" aria-pressed="false" data-i18n="ses">Müzik</button>
+    <button data-filter="kod" aria-pressed="false" data-i18n="kod">Yazılım</button>
+    <button data-filter="sistem" aria-pressed="false" data-i18n="sistem">Profesyonel</button>
+    <button data-filter="yol" aria-pressed="false" data-i18n="yol">Blog</button>
   </nav>
 
   <!-- İşler: her biri bir malzeme (data-mat). Görsel gelince .frame içindeki svg yerine <img src="img/..." alt="..."> koy.
@@ -116,35 +117,35 @@
   <section class="works">
     <a class="work" data-mat="kod" href="https://apps.apple.com/tr/app/thinklighter/id6805202874?l=tr" target="_blank" rel="noopener">
       <div class="frame combo" style="--bg:#FAF4F0"><img class="shot" src="img/thinklighter-ekran.webp" alt="ThinkLighter ekranı" loading="lazy"><img class="badge" src="img/thinklighter.webp" alt="" loading="lazy"></div>
-      <div class="meta"><span class="title">ThinkLighter</span><span class="mat" data-i18n="kod">Kod</span></div>
+      <div class="meta"><span class="title">ThinkLighter</span><span class="mat" data-i18n="kod">Yazılım</span></div>
     </a>
     <a class="work" data-mat="ses" href="https://open.spotify.com/intl-tr/artist/3W8vkEjw8n5eo9PhA1FXTm" target="_blank" rel="noopener">
       <div class="frame"><img src="img/veldra.webp" alt="Veldra — Letters to the Sky" loading="lazy"></div>
-      <div class="meta"><span class="title">Veldra</span><span class="mat" data-i18n="ses">Ses</span></div>
+      <div class="meta"><span class="title">Veldra</span><span class="mat" data-i18n="ses">Müzik</span></div>
     </a>
-    <a class="work" data-mat="isik" href="img/prag.webp" data-gallery="img/prag.webp">
+    <a class="work" data-mat="isik" href="img/prag.webp" data-gallery="img/prag.webp,img/fener.webp">
       <div class="frame"><img src="img/prag.webp" alt="" loading="lazy"></div>
-      <div class="meta"><span class="title" data-i18n="prag">Prag</span><span class="mat" data-i18n="isik">Işık</span></div>
+      <div class="meta"><span class="title" data-i18n="galeri">Galeri</span><span class="mat" data-i18n="isik">Fotoğraf</span></div>
     </a>
     <a class="work" data-mat="sistem" href="https://www.linkedin.com/in/onuralptumer/" target="_blank" rel="noopener">
       <div class="frame"><img src="img/sahadan.webp" alt="" loading="lazy"></div>
-      <div class="meta"><span class="title" data-i18n="saha">Sahadan</span><span class="mat" data-i18n="sistem">Sistem</span></div>
+      <div class="meta"><span class="title" data-i18n="saha">Sahadan</span><span class="mat" data-i18n="sistem">Profesyonel</span></div>
     </a>
     <a class="work" data-mat="kod" href="https://apps.apple.com/tr/app/bunny-fence/id6796085987?l=tr" target="_blank" rel="noopener">
       <div class="frame combo" style="--bg:#8ACC7B"><img class="shot" src="img/bunny-fence-ekran.webp" alt="Bunny Fence ekranı" loading="lazy"><img class="badge" src="img/bunny-fence.webp" alt="" loading="lazy"></div>
-      <div class="meta"><span class="title">Bunny Fence</span><span class="mat" data-i18n="kod">Kod</span></div>
+      <div class="meta"><span class="title">Bunny Fence</span><span class="mat" data-i18n="kod">Yazılım</span></div>
     </a>
     <a class="work" data-mat="yol" href="https://seyahattarifleri.com" target="_blank" rel="noopener">
       <div class="frame combo"><img src="img/seyahat-tarifleri-kapak.webp" alt="Seyahat Tarifleri" loading="lazy"><img class="badge" src="img/seyahat-tarifleri.webp" alt="" loading="lazy"></div>
-      <div class="meta"><span class="title">Seyahat Tarifleri</span><span class="mat" data-i18n="yol">Yol</span></div>
+      <div class="meta"><span class="title">Seyahat Tarifleri</span><span class="mat" data-i18n="yol">Blog</span></div>
     </a>
     <a class="work" data-mat="ses" href="https://open.spotify.com/intl-tr/artist/7tKnbkIjTgv49WMUwiKcUW" target="_blank" rel="noopener">
       <div class="frame"><img src="img/marcus-veld.webp" alt="Marcus Veld — Phase" loading="lazy"></div>
-      <div class="meta"><span class="title">Marcus Veld</span><span class="mat" data-i18n="ses">Ses</span></div>
+      <div class="meta"><span class="title">Marcus Veld</span><span class="mat" data-i18n="ses">Müzik</span></div>
     </a>
     <a class="work" data-mat="isik" href="img/viyana.webp" data-gallery="img/viyana.webp">
       <div class="frame"><img src="img/viyana.webp" alt="" loading="lazy"></div>
-      <div class="meta"><span class="title" data-i18n="viyana">Viyana</span><span class="mat" data-i18n="isik">Işık</span></div>
+      <div class="meta"><span class="title" data-i18n="galeri">Galeri</span><span class="mat" data-i18n="isik">Fotoğraf</span></div>
     </a>
   </section>
 
@@ -177,8 +178,8 @@
 
 <script>
   const T = {
-    tr: { hero: 'Atölyede saat yok.', all: 'Tümü', isik: 'Işık', ses: 'Ses', kod: 'Kod', sistem: 'Sistem', yol: 'Yol', saha: 'Sahadan', prag: 'Prag', viyana: 'Viyana', notes: 'Notlar', filter: 'İşleri süz', close: 'Kapat', prev: 'Önceki', next: 'Sonraki' },
-    en: { hero: 'The workshop keeps no time.', all: 'All', isik: 'Light', ses: 'Sound', kod: 'Code', sistem: 'Systems', yol: 'Road', saha: 'From the floor', prag: 'Prague', viyana: 'Vienna', notes: 'Notes', filter: 'Filter work', close: 'Close', prev: 'Previous', next: 'Next' }
+    tr: { hero: 'Atölyede saat yok.', all: 'Tümü', isik: 'Fotoğraf', ses: 'Müzik', kod: 'Yazılım', sistem: 'Profesyonel', yol: 'Blog', saha: 'Sahadan', galeri: 'Galeri', notes: 'Notlar', filter: 'İşleri süz', close: 'Kapat', prev: 'Önceki', next: 'Sonraki' },
+    en: { hero: 'The workshop keeps no time.', all: 'All', isik: 'Photography', ses: 'Music', kod: 'Software', sistem: 'Professional', yol: 'Blog', saha: 'From the floor', galeri: 'Gallery', notes: 'Notes', filter: 'Filter work', close: 'Close', prev: 'Previous', next: 'Next' }
   };
 
   function setLang(lang) {
@@ -197,7 +198,7 @@
   document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
   document.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () => setFilter(b.dataset.filter)));
 
-  // Işık işleri: data-gallery içindeki görseller (virgülle ayrılmış) büyük açılır.
+  // Fotoğraf işleri: data-gallery içindeki görseller (virgülle ayrılmış) büyük açılır.
   const box = document.querySelector('.lightbox');
   const boxImg = box.querySelector('img');
   let gallery = [], idx = 0;

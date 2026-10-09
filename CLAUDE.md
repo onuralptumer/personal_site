@@ -25,14 +25,14 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 - Gece çalışılan bir atölye: koyu, sıcak zemin; tek vurgu rengi bir lamba ışığı.
 - Renkler: zemin `#14120F`, yüzey `#1D1A16`, çizgi `#2E2A24`, metin `#ECE6DB`, ikincil metin `#A39A8C`, lamba `#E8B04B`.
 - Yazı tipleri: DM Serif Display (başlık ve iş adları), IBM Plex Sans (gövde), IBM Plex Mono (etiketler).
-- Her iş bir malzemeye ait: **Işık** (fotoğraf), **Ses** (müzik), **Kod** (uygulamalar), **Sistem** (saha), **Yol** (seyahat; seyahattarifleri.com). Malzeme süzgeci, "aynı tezgâh, farklı malzemeler" fikrini metin yerine etkileşimle anlatır.
+- Her iş bir malzemeye ait: **Fotoğraf** (EN Photography), **Müzik** (Music), **Yazılım** (Software; uygulamalar), **Profesyonel** (Professional; saha), **Blog** (Blog; seyahattarifleri.com). Koddaki anahtarlar eski adlarla kaldı: `isik`, `ses`, `kod`, `sistem`, `yol`. Malzeme süzgeci, "aynı tezgâh, farklı malzemeler" fikrini metin yerine etkileşimle anlatır.
 
 ## Mevcut durum
 
 - `index.html`: Tek sayfa, bağımlılıksız (HTML + CSS + vanilla JS). TR/EN düğmesi ve malzeme süzgeci çalışıyor.
 - Bağlantılar dolu: ThinkLighter ve Bunny Fence (App Store), Veldra ve Marcus Veld (Spotify), Seyahat Tarifleri, Sahadan → LinkedIn profili, son 3 makale, e-posta.
-- Işık işleri (Prag, Viyana) tıklanınca büyük görsel açılır (`.lightbox` dialog). Galeriye dönüştürmek için `data-gallery` içine görselleri virgülle ekle (`img/prag.webp,img/prag-2.webp`); ileri/geri okları, sayaç, klavye ve kaydırma birden fazla görselde kendiliğinden çıkar.
-- Görseller `img/` klasöründe (webp). Kutular kare. Kapaklar kutuyu doldurur. Uygulamalar `.frame.combo`: zemin rengi (`--bg`) + ekran görüntüsü (`.shot`) + sol altta ikon (`.badge`). Seyahat Tarifleri: tam fotoğraf + logo rozeti. Sahadan: anonim gece fabrika görseli (şirkete ait değil). Fotoğraflar (Prag, Viyana) kutuyu doldurur.
+- Fotoğraf işleri iki "Galeri" kutusu (kapakları Prag ve Viyana; ilk galeride Prag + fener). Tıklanınca büyük görsel açılır (`.lightbox` dialog). Galeriye dönüştürmek için `data-gallery` içine görselleri virgülle ekle (`img/prag.webp,img/prag-2.webp`); ileri/geri okları, sayaç, klavye ve kaydırma birden fazla görselde kendiliğinden çıkar.
+- Görseller `img/` klasöründe (webp). Kutular kare. Kapaklar kutuyu doldurur. Uygulamalar `.frame.combo`: zemin rengi (`--bg`) + ekran görüntüsü (`.shot`) + sol altta ikon (`.badge`). Seyahat Tarifleri: tam fotoğraf + logo rozeti. Sahadan: anonim gece fabrika görseli (şirkete ait değil). Galeri kutusunun kapağı `data-gallery` listesindeki ilk görseldir.
 - Yayın: Vercel, statik (build adımı yok). `vercel.json` yalnızca temiz URL ve önbellek ayarı taşır.
 
 ## Sıradaki işler
