@@ -7,7 +7,7 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 - **Site bir CV değil.** Kariyer, deneyim ve makaleler LinkedIn'in işi. Site LinkedIn'i kopyalamaz.
 - **Konsept: Atölye.** Onuralp hep bir şeyler kuran, üreten biri. Fotoğraf, müzik, iOS uygulamaları ve fabrikada kurduğu sistemler aynı yaratım eyleminin farklı malzemelerdeki ürünleri; birbirlerini besliyorlar.
 - **Ziyaretçide bırakılacak his:** "Bu adam çok yönlü, işinde iyi, işi dışında da kaliteli ve farklı işler yapıyor; farklı bir zihni var."
-- **Hero cümlesi:** "Atölyede saat yok." (EN: "No clocks in the workshop."). Açıklanmaz; anlam katmanlı kalır.
+- **Hero cümlesi:** "Atölyede saat yok." (EN: "The workshop keeps no time."). Açıklanmaz; anlam katmanlı kalır.
 
 ## Kurallar
 
@@ -31,7 +31,7 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 
 - `index.html`: Tek sayfa, bağımlılıksız (HTML + CSS + vanilla JS). TR/EN düğmesi ve malzeme süzgeci çalışıyor.
 - Bağlantılar dolu: ThinkLighter ve Bunny Fence (App Store), Veldra ve Marcus Veld (Spotify), Seyahat Tarifleri, Sahadan → LinkedIn profili, son 3 makale, e-posta.
-- Bağlantısı olmayan işler (`[FOTOĞRAF SETİ]` ×2, Odd Batch, StillDo, FeeGuard) tıklanmayan `<div class="work">` olarak duruyor; bağlantı gelince `<a>` yapılır.
+- Bağlantısı olmayan işler (`[FOTOĞRAF SETİ]` ×2) tıklanmayan `<div class="work">` olarak duruyor; bağlantı gelince `<a>` yapılır.
 - İş kutularında görsel yerine malzeme ikonları var. Görseller `img/` klasörüne konacak.
 - Yayın: Vercel, statik (build adımı yok). `vercel.json` yalnızca temiz URL ve önbellek ayarı taşır.
 
