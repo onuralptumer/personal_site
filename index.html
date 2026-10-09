@@ -53,8 +53,10 @@
   .works { display: grid; grid-template-columns: repeat(auto-fill, minmax(280px, 1fr)); gap: 20px; padding: 8px 0 96px; }
   .work { display: flex; flex-direction: column; gap: 14px; }
   .work[hidden] { display: none; }
-  .frame { aspect-ratio: 4 / 5; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--icon); overflow: hidden; }
-  .frame img { width: 100%; height: 100%; object-fit: cover; }
+  .frame { aspect-ratio: 1; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--icon); overflow: hidden; }
+  .frame img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
+  .frame.icon img { width: 42%; height: auto; aspect-ratio: 1; border-radius: 22%; box-shadow: 0 0 60px 10px rgba(232,176,75,.06); }
+  a.work:hover .frame img { transform: scale(1.03); }
   .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
   .meta .title { font-family: var(--serif); font-size: 24px; }
   .meta .mat { font-family: var(--mono); font-size: 12px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
@@ -99,11 +101,11 @@
        Bağlantısı olmayan işler <div class="work">; bağlantı gelince <a class="work" href="..." target="_blank" rel="noopener"> yap. -->
   <section class="works">
     <a class="work" data-mat="kod" href="https://apps.apple.com/tr/app/thinklighter/id6805202874?l=tr" target="_blank" rel="noopener">
-      <div class="frame"><svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 9 8.5 12l2 3M13.5 9l2 3-2 3"/></svg></div>
+      <div class="frame icon"><img src="img/thinklighter.webp" alt="ThinkLighter" loading="lazy"></div>
       <div class="meta"><span class="title">ThinkLighter</span><span class="mat" data-i18n="kod">Kod</span></div>
     </a>
     <a class="work" data-mat="ses" href="https://open.spotify.com/intl-tr/artist/3W8vkEjw8n5eo9PhA1FXTm" target="_blank" rel="noopener">
-      <div class="frame"><svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M2 12h2M6 8v8M9 5v14M12 9v6M15 3v18M18 7v10M21 11v2"/></svg></div>
+      <div class="frame"><img src="img/veldra.webp" alt="Veldra — Letters to the Sky" loading="lazy"></div>
       <div class="meta"><span class="title">Veldra</span><span class="mat" data-i18n="ses">Ses</span></div>
     </a>
     <div class="work" data-mat="isik">
@@ -115,15 +117,15 @@
       <div class="meta"><span class="title" data-i18n="saha">Sahadan</span><span class="mat" data-i18n="sistem">Sistem</span></div>
     </a>
     <a class="work" data-mat="kod" href="https://apps.apple.com/tr/app/bunny-fence/id6796085987?l=tr" target="_blank" rel="noopener">
-      <div class="frame"><svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><rect x="6" y="2.5" width="12" height="19" rx="2.5"/><path d="M10.5 9 8.5 12l2 3M13.5 9l2 3-2 3"/></svg></div>
+      <div class="frame icon"><img src="img/bunny-fence.webp" alt="Bunny Fence" loading="lazy"></div>
       <div class="meta"><span class="title">Bunny Fence</span><span class="mat" data-i18n="kod">Kod</span></div>
     </a>
     <a class="work" data-mat="yol" href="https://seyahattarifleri.com" target="_blank" rel="noopener">
-      <div class="frame"><svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><circle cx="12" cy="12" r="9"/><path d="M15.5 8.5 13.4 13.4 8.5 15.5l2.1-4.9z"/></svg></div>
+      <div class="frame icon"><img src="img/seyahat-tarifleri.webp" alt="Seyahat Tarifleri" loading="lazy"></div>
       <div class="meta"><span class="title">Seyahat Tarifleri</span><span class="mat" data-i18n="yol">Yol</span></div>
     </a>
     <a class="work" data-mat="ses" href="https://open.spotify.com/intl-tr/artist/7tKnbkIjTgv49WMUwiKcUW" target="_blank" rel="noopener">
-      <div class="frame"><svg width="72" height="72" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" aria-hidden="true"><path d="M2 12h2M6 8v8M9 5v14M12 9v6M15 3v18M18 7v10M21 11v2"/></svg></div>
+      <div class="frame"><img src="img/marcus-veld.webp" alt="Marcus Veld — Phase" loading="lazy"></div>
       <div class="meta"><span class="title">Marcus Veld</span><span class="mat" data-i18n="ses">Ses</span></div>
     </a>
     <div class="work" data-mat="isik">

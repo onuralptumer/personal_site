@@ -32,7 +32,7 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 - `index.html`: Tek sayfa, bağımlılıksız (HTML + CSS + vanilla JS). TR/EN düğmesi ve malzeme süzgeci çalışıyor.
 - Bağlantılar dolu: ThinkLighter ve Bunny Fence (App Store), Veldra ve Marcus Veld (Spotify), Seyahat Tarifleri, Sahadan → LinkedIn profili, son 3 makale, e-posta.
 - Bağlantısı olmayan işler (`[FOTOĞRAF SETİ]` ×2) tıklanmayan `<div class="work">` olarak duruyor; bağlantı gelince `<a>` yapılır.
-- İş kutularında görsel yerine malzeme ikonları var. Görseller `img/` klasörüne konacak.
+- Görseller `img/` klasöründe (webp). Kapaklar kutuyu doldurur; uygulama ikonları ve logolar `.frame.icon` ile ortada küçük durur. Fotoğraf setleri ve Sahadan hâlâ malzeme ikonuyla.
 - Yayın: Vercel, statik (build adımı yok). `vercel.json` yalnızca temiz URL ve önbellek ayarı taşır.
 
 ## Sıradaki işler
