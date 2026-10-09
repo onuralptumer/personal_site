@@ -31,13 +31,13 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 
 - `index.html`: Tek sayfa, bağımlılıksız (HTML + CSS + vanilla JS). TR/EN düğmesi ve malzeme süzgeci çalışıyor.
 - Bağlantılar dolu: ThinkLighter ve Bunny Fence (App Store), Veldra ve Marcus Veld (Spotify), Seyahat Tarifleri, Sahadan → LinkedIn profili, son 3 makale, e-posta.
-- Bağlantısı olmayan işler (`[FOTOĞRAF SETİ]` ×2) tıklanmayan `<div class="work">` olarak duruyor; bağlantı gelince `<a>` yapılır.
-- Görseller `img/` klasöründe (webp). Kutular kare. Kapaklar kutuyu doldurur. Uygulamalar `.frame.combo`: zemin rengi (`--bg`) + ekran görüntüsü (`.shot`) + sol altta ikon (`.badge`). Seyahat Tarifleri: tam fotoğraf + logo rozeti. Sahadan: anonim gece fabrika görseli (şirkete ait değil). Fotoğraf setleri hâlâ malzeme ikonuyla.
+- Bağlantısı olmayan işler (Işık: Prag, Viyana) tıklanmayan `<div class="work">` olarak duruyor; bağlantı gelince `<a>` yapılır.
+- Görseller `img/` klasöründe (webp). Kutular kare. Kapaklar kutuyu doldurur. Uygulamalar `.frame.combo`: zemin rengi (`--bg`) + ekran görüntüsü (`.shot`) + sol altta ikon (`.badge`). Seyahat Tarifleri: tam fotoğraf + logo rozeti. Sahadan: anonim gece fabrika görseli (şirkete ait değil). Fotoğraflar (Prag, Viyana) kutuyu doldurur.
 - Yayın: Vercel, statik (build adımı yok). `vercel.json` yalnızca temiz URL ve önbellek ayarı taşır.
 
 ## Sıradaki işler
 
 1. Gerçek görselleri yerleştir: fotoğraflar, uygulama ekran görüntüleri, Veldra ve Marcus Veld kapakları (`.frame` içindeki svg yerine `<img>`).
-2. Fotoğraf seti adlarını ve kalan işlerin bağlantılarını doldur.
+2. Fotoğraflara tıklanınca ne olacağına karar ver (galeri mi, bağlantı mı).
 3. Her iş için tıklanınca ne olacağına karar ver (kendi sayfası mı, dış bağlantı mı).
 4. Yayına alma (ör. Vercel) ve onuralptumer.com alan adının bağlanması.
