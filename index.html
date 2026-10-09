@@ -55,7 +55,9 @@
   .work[hidden] { display: none; }
   .frame { aspect-ratio: 1; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; display: flex; align-items: center; justify-content: center; color: var(--icon); overflow: hidden; }
   .frame img { width: 100%; height: 100%; object-fit: cover; transition: transform .6s ease; }
-  .frame.icon img { width: 42%; height: auto; aspect-ratio: 1; border-radius: 22%; box-shadow: 0 0 60px 10px rgba(232,176,75,.06); }
+  .frame.combo { position: relative; background: var(--bg, var(--surface)); }
+  .frame.combo .shot { position: absolute; right: 7%; top: 9%; width: 56%; height: auto; object-fit: initial; }
+  .frame.combo .badge { position: absolute; left: 7%; bottom: 7%; width: 24%; height: auto; aspect-ratio: 1; border-radius: 22%; box-shadow: 0 8px 24px rgba(0,0,0,.28); }
   a.work:hover .frame img { transform: scale(1.03); }
   .meta { display: flex; justify-content: space-between; align-items: baseline; gap: 12px; }
   .meta .title { font-family: var(--serif); font-size: 24px; }
@@ -101,7 +103,7 @@
        Bağlantısı olmayan işler <div class="work">; bağlantı gelince <a class="work" href="..." target="_blank" rel="noopener"> yap. -->
   <section class="works">
     <a class="work" data-mat="kod" href="https://apps.apple.com/tr/app/thinklighter/id6805202874?l=tr" target="_blank" rel="noopener">
-      <div class="frame icon"><img src="img/thinklighter.webp" alt="ThinkLighter" loading="lazy"></div>
+      <div class="frame combo" style="--bg:#FAF4F0"><img class="shot" src="img/thinklighter-ekran.webp" alt="ThinkLighter ekranı" loading="lazy"><img class="badge" src="img/thinklighter.webp" alt="" loading="lazy"></div>
       <div class="meta"><span class="title">ThinkLighter</span><span class="mat" data-i18n="kod">Kod</span></div>
     </a>
     <a class="work" data-mat="ses" href="https://open.spotify.com/intl-tr/artist/3W8vkEjw8n5eo9PhA1FXTm" target="_blank" rel="noopener">
@@ -117,11 +119,11 @@
       <div class="meta"><span class="title" data-i18n="saha">Sahadan</span><span class="mat" data-i18n="sistem">Sistem</span></div>
     </a>
     <a class="work" data-mat="kod" href="https://apps.apple.com/tr/app/bunny-fence/id6796085987?l=tr" target="_blank" rel="noopener">
-      <div class="frame icon"><img src="img/bunny-fence.webp" alt="Bunny Fence" loading="lazy"></div>
+      <div class="frame combo" style="--bg:#8ACC7B"><img class="shot" src="img/bunny-fence-ekran.webp" alt="Bunny Fence ekranı" loading="lazy"><img class="badge" src="img/bunny-fence.webp" alt="" loading="lazy"></div>
       <div class="meta"><span class="title">Bunny Fence</span><span class="mat" data-i18n="kod">Kod</span></div>
     </a>
     <a class="work" data-mat="yol" href="https://seyahattarifleri.com" target="_blank" rel="noopener">
-      <div class="frame icon"><img src="img/seyahat-tarifleri.webp" alt="Seyahat Tarifleri" loading="lazy"></div>
+      <div class="frame combo"><img src="img/seyahat-tarifleri-kapak.webp" alt="Seyahat Tarifleri" loading="lazy"><img class="badge" src="img/seyahat-tarifleri.webp" alt="" loading="lazy"></div>
       <div class="meta"><span class="title">Seyahat Tarifleri</span><span class="mat" data-i18n="yol">Yol</span></div>
     </a>
     <a class="work" data-mat="ses" href="https://open.spotify.com/intl-tr/artist/7tKnbkIjTgv49WMUwiKcUW" target="_blank" rel="noopener">
