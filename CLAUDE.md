@@ -35,7 +35,7 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 - Bağlantılar dolu: ThinkLighter ve Bunny Fence (App Store), Veldra ve Marcus Veld (Spotify), Seyahat Tarifleri ve Medium profili (Blog), Sahadan → LinkedIn profili, son 3 makale, e-posta.
 - Fotoğraf işleri iki "Galeri" kutusu (kapakları Prag ve Viyana; ilk galeride Prag + fener). Tıklanınca büyük görsel açılır (`.lightbox` dialog). Galeriye dönüştürmek için `data-gallery` içine görselleri virgülle ekle (`img/prag.webp,img/prag-2.webp`); ileri/geri okları, sayaç, klavye ve kaydırma birden fazla görselde kendiliğinden çıkar.
 - Görseller `img/` klasöründe (webp). Kutular kare. Kapaklar kutuyu doldurur. Uygulamalar `.frame.combo`: zemin rengi (`--bg`) + ekran görüntüsü (`.shot`) + sol altta ikon (`.badge`). Seyahat Tarifleri: tam fotoğraf + logo rozeti. Medium: `.frame.fit` (görsel kırpılmadan ortada, zemin `--bg`), yatay logolar için. Sahadan: anonim gece fabrika görseli (şirkete ait değil). Galeri kutusunun kapağı `data-gallery` listesindeki ilk görseldir.
-- Hakkımda (`.about`, `#hakkimda`): işlerden sonra, Notlar'dan önce. Siyah-beyaz, kare kırpılmış portre (`img/onuralp.webp`) + Onuralp'in kendi yazdığı 4 paragraf (`about1`–`about4`, TR/EN). Metin onun sözleri; değiştirmeden önce sor.
+- Hakkımda (`.about`, `#hakkimda`): işlerden sonra, Notlar'dan önce. Siyah-beyaz kare portre (`img/onuralp.webp`; kontrast 1.1, parlaklık 0.86) + Onuralp'in kendi yazdığı 4 paragraf (`about1`–`about4`, TR/EN). Metin onun sözleri; değiştirmeden önce sor.
 - Yayın: Vercel, statik (build adımı yok). `vercel.json` yalnızca temiz URL ve önbellek ayarı taşır.
 
 ## Yeni iş ekleme
