@@ -35,8 +35,8 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 - Bağlantılar dolu: ThinkLighter ve Bunny Fence (App Store), Veldra ve Marcus Veld (Spotify), Seyahat Tarifleri ve Medium profili (Blog), Sahadan → LinkedIn profili, son 3 makale, e-posta.
 - Fotoğraf işleri iki "Galeri" kutusu (kapakları Prag ve Viyana; ilk galeride Prag + fener). Tıklanınca büyük görsel açılır (`.lightbox` dialog). Galeriye dönüştürmek için `data-gallery` içine görselleri virgülle ekle (`img/prag.webp,img/prag-2.webp`); ileri/geri okları, sayaç, klavye ve kaydırma birden fazla görselde kendiliğinden çıkar.
 - Görseller `img/` klasöründe (webp). Kutular kare. Kapaklar kutuyu doldurur. Uygulamalar `.frame.combo`: zemin rengi (`--bg`) + ekran görüntüsü (`.shot`) + sol altta ikon (`.badge`). Seyahat Tarifleri: tam fotoğraf + logo rozeti. Medium: `.frame.fit` (görsel kırpılmadan ortada, zemin `--bg`), yatay logolar için. Sahadan: anonim gece fabrika görseli (şirkete ait değil). Galeri kutusunun kapağı `data-gallery` listesindeki ilk görseldir.
-- Hakkımda (`.about`, `#hakkimda`): işlerden sonra, Notlar'dan önce. Siyah-beyaz kare portre (`img/onuralp.webp`; kontrast 1.1, parlaklık 0.86) + Onuralp'in kendi yazdığı 4 paragraf (`about1`–`about4`, TR/EN). Metin onun sözleri; değiştirmeden önce sor.
-- Yayın: Vercel, statik (build adımı yok). `vercel.json` yalnızca temiz URL ve önbellek ayarı taşır.
+- Hakkımda (`.about`, `#hakkimda`): işlerden sonra, Notlar'dan önce. Siyah-beyaz kare portre (`img/onuralp-portre.webp`; kontrast 1.1, parlaklık 0.86) + Onuralp'in kendi yazdığı 4 paragraf (`about1`–`about4`, TR/EN). Metin onun sözleri; değiştirmeden önce sor.
+- Yayın: Vercel, statik (build adımı yok). `vercel.json` yalnızca temiz URL ayarı taşır; görseller için uzun önbellek yok (değişen görsel hemen görünsün diye).
 
 ## Yeni iş ekleme
 
@@ -45,6 +45,7 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 - Bağlantısı olmayan iş: `<div class="work" data-mat="...">`; bağlantı gelince `<a>` yapılır.
 - Görsel `.frame` içine `<img src="img/..." alt="..." loading="lazy">` olarak konur. Görseli henüz olmayan iş için `.frame` içine malzeme ikonu (svg) konabilir.
 - Fotoğraf (galeri) işi: `<a class="work" data-mat="isik" href="img/ilk.webp" data-gallery="img/ilk.webp,img/ikinci.webp">`. `data-gallery` içindeki virgülle ayrılmış görseller tıklanınca büyük açılır (`.lightbox`).
+- Bir görseli değiştirirken dosyaya yeni bir ad ver (ör. `onuralp-portre-2.webp`); tarayıcılar aynı adlı eski dosyayı önbellekten gösterebilir.
 - Yeni metinler iki dilde `T.tr` / `T.en` sözlüğüne eklenir ve öğeye `data-i18n="anahtar"` verilir.
 
 ## Sıradaki işler
