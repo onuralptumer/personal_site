@@ -16,6 +16,7 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 - **Tarih yok.** Hiçbir işte tarih gösterilmez. Tek katmanlı, tarihsiz bir koleksiyon.
 - **Şirket bilgisi yok.** İnci GS Yuasa / İnci Akü projeleri, adları, verileri, ekran görüntüleri sitede yer almaz. İş tarafı tek bir "Sahadan" kutusuyla temsil edilir ve LinkedIn'e yönlendirir.
 - **Makaleler:** Sadece son 3 LinkedIn makalesinin başlığı, LinkedIn'e bağlantıyla. Makale içeriği siteye taşınmaz.
+- **Makale güncelleme:** Notlar listesi yeniden eskiye sıralıdır (1 en yeni). Yeni makale gelince 3. sıradaki (en eski) silinir, yenisi 1. sıraya eklenir. Başlık LinkedIn'deki haliyle, birebir yazılır.
 - **İki dilli:** Türkçe varsayılan, İngilizce ikinci. Her yeni içerik iki dilde.
 - **Rumuzlar:** Marcus Veld ve Veldra (müzik projeleri) koleksiyonda birer iş olarak yer alır ve kendi dünyalarına bağlanır.
 - **Güncelleme temposu:** 1–2 ayda bir yeni iş eklenir. Yapı buna göre basit kalmalı.
