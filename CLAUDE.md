@@ -19,6 +19,7 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 - **İki dilli:** Türkçe varsayılan, İngilizce ikinci. Her yeni içerik iki dilde.
 - **Rumuzlar:** Marcus Veld ve Veldra (müzik projeleri) koleksiyonda birer iş olarak yer alır ve kendi dünyalarına bağlanır.
 - **Güncelleme temposu:** 1–2 ayda bir yeni iş eklenir. Yapı buna göre basit kalmalı.
+- **Kodda yorum yok.** `index.html` ve diğer kod dosyalarına yorum yazılmaz; açıklamalar bu dosyaya yazılır.
 
 ## Görsel dil
 
@@ -34,6 +35,15 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 - Fotoğraf işleri iki "Galeri" kutusu (kapakları Prag ve Viyana; ilk galeride Prag + fener). Tıklanınca büyük görsel açılır (`.lightbox` dialog). Galeriye dönüştürmek için `data-gallery` içine görselleri virgülle ekle (`img/prag.webp,img/prag-2.webp`); ileri/geri okları, sayaç, klavye ve kaydırma birden fazla görselde kendiliğinden çıkar.
 - Görseller `img/` klasöründe (webp). Kutular kare. Kapaklar kutuyu doldurur. Uygulamalar `.frame.combo`: zemin rengi (`--bg`) + ekran görüntüsü (`.shot`) + sol altta ikon (`.badge`). Seyahat Tarifleri: tam fotoğraf + logo rozeti. Sahadan: anonim gece fabrika görseli (şirkete ait değil). Galeri kutusunun kapağı `data-gallery` listesindeki ilk görseldir.
 - Yayın: Vercel, statik (build adımı yok). `vercel.json` yalnızca temiz URL ve önbellek ayarı taşır.
+
+## Yeni iş ekleme
+
+- Her iş `.works` içinde bir kutudur ve `data-mat` ile bir malzemeye bağlanır (`isik`, `ses`, `kod`, `sistem`, `yol`).
+- Dış bağlantılı iş: `<a class="work" data-mat="..." href="..." target="_blank" rel="noopener">`.
+- Bağlantısı olmayan iş: `<div class="work" data-mat="...">`; bağlantı gelince `<a>` yapılır.
+- Görsel `.frame` içine `<img src="img/..." alt="..." loading="lazy">` olarak konur. Görseli henüz olmayan iş için `.frame` içine malzeme ikonu (svg) konabilir.
+- Fotoğraf (galeri) işi: `<a class="work" data-mat="isik" href="img/ilk.webp" data-gallery="img/ilk.webp,img/ikinci.webp">`. `data-gallery` içindeki virgülle ayrılmış görseller tıklanınca büyük açılır (`.lightbox`).
+- Yeni metinler iki dilde `T.tr` / `T.en` sözlüğüne eklenir ve öğeye `data-i18n="anahtar"` verilir.
 
 ## Sıradaki işler
 

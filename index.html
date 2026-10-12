@@ -112,8 +112,6 @@
     <button data-filter="yol" aria-pressed="false" data-i18n="yol">Blog</button>
   </nav>
 
-  <!-- İşler: her biri bir malzeme (data-mat). Görsel gelince .frame içindeki svg yerine <img src="img/..." alt="..."> koy.
-       Bağlantısı olmayan işler <div class="work">; bağlantı gelince <a class="work" href="..." target="_blank" rel="noopener"> yap. -->
   <section class="works">
     <a class="work" data-mat="kod" href="https://apps.apple.com/tr/app/thinklighter/id6805202874?l=tr" target="_blank" rel="noopener">
       <div class="frame combo" style="--bg:#FAF4F0"><img class="shot" src="img/thinklighter-ekran.webp" alt="ThinkLighter ekranı" loading="lazy"><img class="badge" src="img/thinklighter.webp" alt="" loading="lazy"></div>
@@ -198,7 +196,6 @@
   document.querySelectorAll('[data-lang]').forEach(b => b.addEventListener('click', () => setLang(b.dataset.lang)));
   document.querySelectorAll('[data-filter]').forEach(b => b.addEventListener('click', () => setFilter(b.dataset.filter)));
 
-  // Fotoğraf işleri: data-gallery içindeki görseller (virgülle ayrılmış) büyük açılır.
   const box = document.querySelector('.lightbox');
   const boxImg = box.querySelector('img');
   let gallery = [], idx = 0;
