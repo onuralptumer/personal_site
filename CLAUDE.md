@@ -7,7 +7,7 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 - **Site bir CV değil.** Kariyer, deneyim ve makaleler LinkedIn'in işi. Site LinkedIn'i kopyalamaz.
 - **Konsept: Atölye.** Onuralp hep bir şeyler kuran, üreten biri. Fotoğraf, müzik, iOS uygulamaları ve fabrikada kurduğu sistemler aynı yaratım eyleminin farklı malzemelerdeki ürünleri; birbirlerini besliyorlar.
 - **Ziyaretçide bırakılacak his:** "Bu adam çok yönlü, işinde iyi, işi dışında da kaliteli ve farklı işler yapıyor; farklı bir zihni var."
-- **Hero:** Tek kelime, "Atölye" (EN: "Atelier"). Açıklanmaz.
+- **Hero:** Tek kelime, noktalı: "Atölye." (EN: "Atelier."). Açıklanmaz.
 
 ## Kurallar
 
