@@ -78,6 +78,15 @@
   .lightbox [hidden] { display: none; }
   @media (min-width: 700px) { .lightbox img { max-width: calc(100vw - 176px); } }
 
+  .about { border-top: 1px solid var(--line); padding: 40px 0 96px; display: flex; flex-wrap: wrap; gap: 32px; }
+  .about .label { flex: 1 1 200px; font-family: var(--mono); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
+  .about .body { flex: 999 1 560px; min-width: 0; display: flex; flex-wrap: wrap; gap: 40px; align-items: flex-start; }
+  .about .portrait { flex: 0 1 300px; margin: 0; aspect-ratio: 4 / 5; background: var(--surface); border: 1px solid var(--line); border-radius: 4px; overflow: hidden; }
+  .about .portrait img { width: 100%; height: 100%; object-fit: cover; display: block; }
+  .about .text { flex: 1 1 320px; max-width: 62ch; }
+  .about .text p { margin: 0 0 1.1em; font-size: 18px; line-height: 1.65; }
+  .about .text p:last-child { margin-bottom: 0; }
+
   .notes { border-top: 1px solid var(--line); padding: 40px 0 96px; display: flex; flex-wrap: wrap; gap: 32px; }
   .notes .label { flex: 1 1 200px; font-family: var(--mono); font-size: 13px; letter-spacing: .06em; text-transform: uppercase; color: var(--muted); }
   .notes .list { flex: 999 1 560px; min-width: 0; display: flex; flex-direction: column; }
@@ -153,6 +162,19 @@
     </a>
   </section>
 
+  <section class="about" id="hakkimda">
+    <div class="label" data-i18n="about">Hakkımda</div>
+    <div class="body">
+      <figure class="portrait"><img src="img/onuralp.webp" alt="Onuralp Tümer" loading="lazy"></figure>
+      <div class="text">
+        <p data-i18n="about1">Ben Onuralp Tümer. Üretim, teknoloji ve insanın bir araya geldiği alanlarda çalışıyorum. Profesyonel hayatımda odağım, karmaşık sorunları anlaşılır hâle getirmek, doğru sistemleri kurmak ve fikirleri sahada sonuç veren uygulamalara dönüştürmek.</p>
+        <p data-i18n="about2">Farklı disiplinlerden besleniyorum. Müzik üretmek, yazılım geliştirmek, fotoğraf çekmek ve yazmak; düşüncelerimi sınadığım, yeni bakış açıları kazandığım alanlar. Her biri dikkatimi başka bir yere yöneltiyor: bir sistemin işleyişine, bir kompozisyonun dengesine ya da gündelik hayatın kolayca gözden kaçan ayrıntılarına.</p>
+        <p data-i18n="about3">Benim için iyi bir fikrin değeri, hayata geçtiğinde ortaya çıkıyor. Bir üretim sürecinde, bir uygulamada veya bir müzik parçasında; neyi amaçladığını bilmek, ayrıntılara özen göstermek ve ortaya çıkan işin sorumluluğunu almak önemli.</p>
+        <p data-i18n="about4">Atölye, bu yaklaşımın farklı alanlardaki karşılıklarını bir araya getiriyor. Yaptığım işleri, üzerinde düşündüğüm konuları ve keşfetmeye devam ettiğim alanları burada paylaşıyorum.</p>
+      </div>
+    </div>
+  </section>
+
   <section class="notes" id="notlar">
     <div class="label" data-i18n="notes">Notlar</div>
     <div class="list" lang="tr">
@@ -182,8 +204,8 @@
 
 <script>
   const T = {
-    tr: { hero: 'Atölye.', all: 'Tümü', isik: 'Fotoğraf', ses: 'Müzik', kod: 'Yazılım', sistem: 'Profesyonel', yol: 'Blog', saha: 'Sahadan', galeri: 'Galeri', notes: 'Notlar', filter: 'İşleri süz', close: 'Kapat', prev: 'Önceki', next: 'Sonraki' },
-    en: { hero: 'Atelier.', all: 'All', isik: 'Photography', ses: 'Music', kod: 'Software', sistem: 'Professional', yol: 'Blog', saha: 'From the floor', galeri: 'Gallery', notes: 'Notes', filter: 'Filter work', close: 'Close', prev: 'Previous', next: 'Next' }
+    tr: { hero: 'Atölye.', all: 'Tümü', isik: 'Fotoğraf', ses: 'Müzik', kod: 'Yazılım', sistem: 'Profesyonel', yol: 'Blog', saha: 'Sahadan', galeri: 'Galeri', notes: 'Notlar', filter: 'İşleri süz', close: 'Kapat', prev: 'Önceki', next: 'Sonraki', about: "Hakkımda", about1: "Ben Onuralp Tümer. Üretim, teknoloji ve insanın bir araya geldiği alanlarda çalışıyorum. Profesyonel hayatımda odağım, karmaşık sorunları anlaşılır hâle getirmek, doğru sistemleri kurmak ve fikirleri sahada sonuç veren uygulamalara dönüştürmek.", about2: "Farklı disiplinlerden besleniyorum. Müzik üretmek, yazılım geliştirmek, fotoğraf çekmek ve yazmak; düşüncelerimi sınadığım, yeni bakış açıları kazandığım alanlar. Her biri dikkatimi başka bir yere yöneltiyor: bir sistemin işleyişine, bir kompozisyonun dengesine ya da gündelik hayatın kolayca gözden kaçan ayrıntılarına.", about3: "Benim için iyi bir fikrin değeri, hayata geçtiğinde ortaya çıkıyor. Bir üretim sürecinde, bir uygulamada veya bir müzik parçasında; neyi amaçladığını bilmek, ayrıntılara özen göstermek ve ortaya çıkan işin sorumluluğunu almak önemli.", about4: "Atölye, bu yaklaşımın farklı alanlardaki karşılıklarını bir araya getiriyor. Yaptığım işleri, üzerinde düşündüğüm konuları ve keşfetmeye devam ettiğim alanları burada paylaşıyorum." },
+    en: { hero: 'Atelier.', all: 'All', isik: 'Photography', ses: 'Music', kod: 'Software', sistem: 'Professional', yol: 'Blog', saha: 'From the floor', galeri: 'Gallery', notes: 'Notes', filter: 'Filter work', close: 'Close', prev: 'Previous', next: 'Next', about: "About me", about1: "I'm Onuralp Tümer. I work where manufacturing, technology and people meet. In my professional life, my focus is on making complex problems understandable, building the right systems, and turning ideas into solutions that deliver results on the ground.", about2: "I draw on different disciplines. Making music, building software, taking photographs and writing are where I test my thinking and gain new perspectives. Each one turns my attention somewhere else: to how a system works, to the balance of a composition, or to the easily overlooked details of everyday life.", about3: "For me, a good idea shows its worth once it is put into practice. Whether in a production process, an app or a piece of music, what matters is knowing what you are aiming for, caring about the details and taking responsibility for the work that comes out of it.", about4: "The Atelier brings together what this approach looks like across different fields. Here I share the work I make, the subjects I think about and the areas I keep exploring." }
   };
 
   function setLang(lang) {
