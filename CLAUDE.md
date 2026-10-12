@@ -36,6 +36,7 @@ Onuralp Tümer'in kişisel sitesi. Bu dosya, sitenin konsept kararlarını taş�
 - Fotoğraf işleri iki "Galeri" kutusu (kapakları Prag ve Viyana; ilk galeride Prag + fener). Tıklanınca büyük görsel açılır (`.lightbox` dialog). Galeriye dönüştürmek için `data-gallery` içine görselleri virgülle ekle (`img/prag.webp,img/prag-2.webp`); ileri/geri okları, sayaç, klavye ve kaydırma birden fazla görselde kendiliğinden çıkar.
 - Görseller `img/` klasöründe (webp). Kutular kare. Kapaklar kutuyu doldurur. Uygulamalar `.frame.combo`: zemin rengi (`--bg`) + ekran görüntüsü (`.shot`) + sol altta ikon (`.badge`). Seyahat Tarifleri: tam fotoğraf + logo rozeti. Medium: `.frame.fit` (görsel kırpılmadan ortada, zemin `--bg`), yatay logolar için. Sahadan: anonim gece fabrika görseli (şirkete ait değil). Galeri kutusunun kapağı `data-gallery` listesindeki ilk görseldir.
 - Hakkımda (`.about`, `#hakkimda`): işlerden sonra, Notlar'dan önce. Siyah-beyaz kare portre (`img/onuralp-portre-2.webp`; kontrast 1.1, parlaklık 0.76) + Onuralp'in kendi yazdığı 4 paragraf (`about1`–`about4`, TR/EN). Metin onun sözleri; değiştirmeden önce sor.
+- Ziyaretçi sayımı: Vercel Web Analytics, `<head>` içindeki `/_vercel/insights/script.js` ile (paket yok; site Next.js değil). Vercel projesinde Analytics açık olmalı. Yerelde bu dosya 404 verir, normaldir.
 - Yayın: Vercel, statik (build adımı yok). `vercel.json` yalnızca temiz URL ayarı taşır; görseller için uzun önbellek yok (değişen görsel hemen görünsün diye).
 
 ## Yeni iş ekleme
